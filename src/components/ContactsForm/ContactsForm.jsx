@@ -8,35 +8,6 @@ import {
   ButtonSubmit,
 } from './ContactsForm.styled';
 
-// export class ContactsForm extends Component {
-//   state = {
-//     number: '',
-//     name: '',
-//   };
-
-//   handleChange = event => {
-//     const { name, value } = event.target;
-
-//     return this.setState({
-//       [name]: value,
-//     });
-//   };
-
-//   onFormSubmit = event => {
-//     event.preventDefault();
-//     const { onSubmit } = this.props;
-
-//     onSubmit({
-//       id: nanoid(),
-//       ...this.state,
-//     });
-
-//     this.reset();
-//   };
-
-//   reset() {
-//     this.setState({ name: '', number: '' });
-//   }
 
 export const ContactsForm = ({ onSubmit }) => {
   const [number, setNumber] = useState('');
